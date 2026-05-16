@@ -1,0 +1,1194 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Playfair Display', 'Lato', sans-serif;
+        background: #F7FAFF;
+    }
+
+    /* -------------------- ХЕДЕР -------------------- */
+    .heder {
+        display: flex;
+        padding: 20px 162px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navblock {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .linkblock {
+        display: flex;
+        gap: 40px;
+    }
+
+    .linkblock a {
+        color: #1A1F2E;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+    .linkblock a:hover{
+        color: #3B82F6;
+    }
+
+    .buttonblock {
+        display: flex;
+        gap: 20px;
+    }
+
+    .linkbuton1 {
+        background: none;
+        border: none;
+        color: #3B82F6;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 15px 30px;
+        border-radius: 16px;
+    }
+
+    .linkbuton2 {
+        background: #3B82F6;
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 16px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .linkbuton1:hover{
+        background-color: #3b83f656;
+    }
+    .linkbuton2:hover{
+        background-color: #3b83f6b2;
+        color: #1A1F2E;
+    }
+
+    /* -------------------- ХИРO -------------------- */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 55px 162px 77px 162px;
+        gap: 40px;
+    }
+
+    .namehero {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .namehero h1 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 96px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+
+    .cap {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* ---------- СЛАЙДЕР ---------- */
+    .slederr{
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        width: 100%;
+    }
+    .slider-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slider {
+        height: 710px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #ddd;
+        position: relative;
+        border-color: #ffffff00;
+    }
+
+    .slides {
+        position: relative;
+        height: 420px;
+        height: 710px;
+        border-color: #ffffff00;
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: 0.5s;
+        border-color: #ffffff00;
+    }
+
+    .slide.active {
+        opacity: 1;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 70px;
+        height: 70px;
+
+        background: #F7FAFF;
+        border: none;
+        border-radius: 20px;
+
+        font-size: 40px;
+        color: #3B82F6;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        z-index: 2;
+
+        transition: all 0.25s ease;
+    }
+    .left {
+    left: 20px;
+    }
+    .left:hover{
+        background: #3B82F633;  
+    }
+
+    .right {
+        right: 20px;
+    }
+    .right:hover{
+        background: #8eb6f8c8;  
+    }
+
+    .dots {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .dot {
+        width: 30px;
+        height: 30px;
+        background: #F0F4FF;
+        border-radius: 50%;
+    }
+
+    .dot.active {
+        background: #3B82F6;
+        width: 30px;
+        height: 30px;
+    }
+/* -------------------- OBRAZOVANIE -------------------- */
+    .obrazovanie{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 162px;
+        width: 100%;
+        height: 973px;
+        gap: 75px;
+    }
+    .obrazovanie h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    .contentt{
+        display: flex;
+        gap: 27px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 50px;
+        background-color: #F0F4FF;
+        width: 100%;
+        border-radius: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .block:hover,
+    .naprav_block:hover{
+    border: 2px solid #3B82F6;
+
+        box-shadow: 
+            0 0 0 4px rgba(59,130,246,0.1),  
+            0 15px 40px rgba(59,130,246,0.2);   
+
+        transform: translateY(-5px);
+    }
+    .block h1{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 36px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    .block h3{
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    /* -------------------------Направления-------------------------- */
+    .naprav{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 162px;
+        gap: 75px;
+    }
+    .naprav h1{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        color: #1A1F2E;
+    }
+    .napravh h2{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 36px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    .naprav_block{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        padding: 0px 0px 30px 0px;
+        background-color: #F0F4FF;
+        border: 2px solid #3B82F6;
+        border-radius: 16px;
+    }
+    .naprav_block img{
+        width: 100%;
+        height: 191px;
+    }
+    .naprav_block_text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0px 30px 0px 30px;
+        gap: 30px;
+    }
+    .teeext p{
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    .teeext a{
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1A1F2E;
+    }
+    .ttextnaprav{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .ttextnaprav h2{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        color: #1A1F2E;
+    }
+    .block_button{
+        width: 100%;
+        background-color: #F7FAFF;
+        border: none;
+        height: 42px;
+        border-radius: 16px;
+    }
+    .block_button:hover{
+        background-color: #3B82F633;
+    }
+    .block_button p{
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+    .teeext{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .naprav_content{
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+     /* -------------------------FAQ-------------------------- */
+    .faq {
+        padding: 100px 162px;
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    .faq h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .faq-item {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 40px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .faq-question h3 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #1A1F2E;
+        margin: 0;
+    }
+
+    .faq-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1A1F2E;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+        margin-left: 20px;
+    }
+
+    .faq-item.active .faq-toggle {
+        transform: rotate(45deg);
+        color: #1A1F2E;
+    }
+
+    .faq-item.active .faq-question h3 {
+        color: #1A1F2E;
+        font-size: 36px;
+        font-family: 'Playfair Display', sans-serif;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 300px;
+        padding: 0 40px 30px 40px;
+    }
+
+    .faq-answer p {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #1A1F2E;
+        margin: 0;
+    }
+  /*-------------------------NEWS----------------------------  */
+    .news{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 162px;
+        gap: 75px;
+    }
+    .text_newscontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .textnews{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .textnews h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        font-weight: 100;
+        color: #1A1F2E;
+    }
+        .textnews h3{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #1A1F2E;
+
+    }
+    .all_news{
+        font-size: 24px;
+        padding: 15px 30px;
+        background-color: #f0f4ff00;
+        border-color: #F0F4FF;
+        border-radius: 16px;
+        background: #ffffff;
+        border: 1px solid #F0F4FF;
+        border-radius: 16px;
+        font-family: 'Lato', sans-serif;
+        color: #1A1F2E;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    .all_news:hover{
+        background-color: #3b83f646;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+
+    .news-card {
+        border: 5px solid #F0F4FF;
+        background: #FFFFFF;
+        border-radius: 16px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 25px 0px;
+        align-items: center;
+        gap: 25px;
+    }
+
+
+    /* Блок с картинкой */
+    .card-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 220px;
+    }
+
+    .card-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .card-tag {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background-color: #3B82F6;
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 6px 14px;
+        border-radius: 20px;
+        z-index: 2;
+    }
+
+    /* Контент карточки */
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        flex-grow: 1;
+        margin: 0px 25px 0px 25px
+    }
+
+    .card-title {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: #1A1F2E;
+    }
+    .card-desc {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #1A1F2E;
+        overflow: hidden;
+    }
+    .card-footer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: auto; 
+        padding-top: 16px;
+    }
+
+    .card-footer span {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        color: #94A3B8;
+    }
+    .news-card:hover{
+        box-shadow: 
+            0 0 0 4px rgba(59,130,246,0.1),  
+            0 15px 40px rgba(59,130,246,0.2);   
+        transform: translateY(-5px);
+        
+        }
+/* -----------------КОНТАКТЫ------------------- */
+    .contact{
+        display: flex;
+        flex-direction: row;
+        padding: 100px 162px;
+        gap: 104px;
+        justify-content: space-between;
+    }
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        overflow: hidden;
+    }
+    .contact-text h1{
+        font-size: 60px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #1A1F2E;
+    }
+    .contact-text h2{
+        font-size: 28px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #1A1F2E;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .text-container h1{
+        font-size: 28px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #1a1f2e4a;
+    }
+    .text-container p{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        color: #1A1F2E;
+    }
+    .phone-button{
+        font-size: 28px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #1A1F2E;
+        background-color: #F0F4FF;
+        padding: 15px 50px;
+        border: 0;
+        border-radius: 16px;
+    }
+    .phone-button:hover{
+        background-color: #3b83f643;
+    }
+    /* --------------------------ФУТЕР------------------------- */
+        .footer {
+        background-color: #1A1F2E; 
+        color: #ffffff;
+        padding: 80px 162px 40px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footer-brand {
+        max-width: 400px;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .footer-logo span {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .footer-desc {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #cbd5e1;
+    }
+
+    .footer-nav, 
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-nav h2, 
+    .footer-contacts h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-links a {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #ffffff;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #cbd5e1;
+    }
+
+    .footer-bottom {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #334155; 
+        margin-bottom: 40px;
+    }
+
+    .footer-bottom p {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #F0F4FF;
+        font-weight: 500px;
+    }
+    
+/* ------------------- 1536px ---------------------- */
+
+@media (max-width: 1536px){
+
+    .heder,
+    .hero,
+    .obrazovanie,
+    .naprav,
+    .faq,
+    .news,
+    .contact,
+    .footer{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .namehero h1{
+        font-size: 80px;
+    }
+
+    .slider{
+        height: 620px;
+    }
+
+    .slides{
+        height: 620px;
+    }
+
+    .contact img{
+        width: 700px !important;
+        height: auto !important;
+    }
+}
+/* ------------------- 1024px ---------------------- */
+
+@media (max-width: 1024px){
+
+    /* ---------- HEADER ---------- */
+
+    .heder{
+        padding: 20px 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navblock{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .linkblock{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .buttonblock{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero{
+        padding: 50px 40px;
+    }
+
+    .namehero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .namehero h1{
+        font-size: 64px;
+    }
+
+    .cap{
+        width: 70px;
+        height: 70px;
+    }
+
+    .slider{
+        height: 500px;
+    }
+
+    .slides{
+        height: 500px;
+    }
+
+    .arrow{
+        width: 60px;
+        height: 60px;
+        font-size: 34px;
+    }
+
+    .obrazovanie{
+        padding: 80px 40px;
+        height: auto;
+    }
+
+    .obrazovanie > h1{
+        font-size: 48px;
+    }
+
+    .contentt{
+        flex-direction: column;
+    }
+
+    .block h1{
+        font-size: 30px;
+    }
+
+    .naprav{
+        padding: 80px 40px;
+    }
+
+    .naprav h1{
+        font-size: 48px;
+    }
+
+    .naprav_content{
+        flex-direction: column;
+    }
+
+    .faq{
+        padding: 80px 40px;
+    }
+
+    .faq h1{
+        font-size: 48px;
+    }
+
+    .faq-question h3{
+        font-size: 28px;
+    }
+
+    .news{
+        padding: 80px 40px;
+    }
+
+    .text_newscontainer{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .textnews h1{
+        font-size: 48px;
+    }
+
+    .textnews h3{
+        font-size: 28px;
+    }
+
+    .news-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        padding: 80px 40px;
+        flex-direction: column;
+    }
+
+    .contact img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .contact-text h1{
+        font-size: 48px;
+    }
+
+    .footer{
+        padding: 60px 40px 30px;
+    }
+
+    .footer-content{
+        flex-wrap: wrap;
+    }
+}
+/* ----------------------- 640px ----------------------- */
+
+@media (max-width: 640px){
+
+    /* ---------- HEADER ---------- */
+
+    .heder{
+        padding: 20px;
+    }
+
+    .linkblock{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkblock a{
+        font-size: 18px;
+    }
+
+    .buttonblock{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .linkbuton1,
+    .linkbuton2{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .hero{
+        padding: 40px 20px;
+    }
+
+    .namehero h1{
+        font-size: 42px;
+    }
+
+    .cap{
+        width: 55px;
+        height: 55px;
+    }
+
+    .slider{
+        height: 320px;
+        border-radius: 16px;
+    }
+
+    .slides{
+        height: 320px;
+    }
+
+    .arrow{
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+        border-radius: 12px;
+    }
+
+    .dot,
+    .dot.active{
+        width: 18px;
+        height: 18px;
+    }
+
+    .obrazovanie{
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .obrazovanie > h1{
+        font-size: 36px;
+    }
+
+    .block{
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .block h1{
+        font-size: 24px;
+    }
+
+    .block h3{
+        font-size: 18px;
+    }
+
+    .naprav{
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .naprav h1{
+        font-size: 36px;
+    }
+
+    .teeext p{
+        font-size: 20px;
+    }
+
+    .teeext a{
+        font-size: 16px;
+    }
+
+    .faq{
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .faq h1{
+        font-size: 36px;
+    }
+
+    .faq-question{
+        padding: 25px;
+    }
+
+    .faq-question h3{
+        font-size: 22px;
+    }
+
+    .faq-item.active .faq-answer{
+        padding: 0 25px 25px 25px;
+    }
+
+    .news{
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .textnews h1{
+        font-size: 36px;
+    }
+
+    .textnews h3{
+        font-size: 22px;
+    }
+
+    .all_news{
+        width: 100%;
+    }
+
+    .card-title{
+        font-size: 24px;
+    }
+
+    .card-desc{
+        font-size: 18px;
+    }
+
+    .contact{
+        padding: 60px 20px;
+        gap: 50px;
+    }
+
+    .contact-text h1{
+        font-size: 36px;
+    }
+
+    .contact-text h2{
+        font-size: 22px;
+    }
+
+    .text-container h1{
+        font-size: 22px;
+    }
+
+    .text-container p{
+        font-size: 18px;
+    }
+
+    .phone-button{
+        width: 100%;
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .footer{
+        padding: 40px 20px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-bottom p{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* ----------------------- 375px ----------------------- */
+
+@media (max-width: 375px){
+
+    .namehero h1{
+        font-size: 32px;
+    }
+
+    .slider{
+        height: 240px;
+    }
+
+    .slides{
+        height: 240px;
+    }
+
+    .arrow{
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+
+    .obrazovanie > h1,
+    .naprav h1,
+    .faq h1,
+    .textnews h1,
+    .contact-text h1{
+        font-size: 30px;
+    }
+
+    .block{
+        padding: 22px;
+    }
+
+    .block h1{
+        font-size: 20px;
+    }
+
+    .block h3{
+        font-size: 16px;
+    }
+
+    .faq-question h3{
+        font-size: 18px;
+    }
+
+    .faq-answer p{
+        font-size: 15px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .card-desc{
+        font-size: 16px;
+    }
+
+    .contact-text h2{
+        font-size: 18px;
+    }
+
+    .text-container h1{
+        font-size: 18px;
+    }
+
+    .text-container p{
+        font-size: 16px;
+    }
+
+    .phone-button{
+        font-size: 18px;
+    }
+
+    .footer-logo img{
+        width: 150px;
+        height: auto;
+    }
+
+    .footer-desc,
+    .footer-links a,
+    .contact-item{
+        font-size: 14px;
+    }
+
+    .contact-item{
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,1229 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Playfair Display', 'Lato', sans-serif;
+        background: #F7FAFF;
+    }
+
+    /* -------------------- ХЕДЕР -------------------- */
+    .heder {
+        display: flex;
+        padding: 20px 162px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navblock {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .linkblock {
+        display: flex;
+        gap: 40px;
+    }
+
+    .linkblock a {
+        color: #1A1F2E;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
+    .linkblock a:hover{
+        color: #3B82F6;
+    }
+
+    .buttonblock {
+        display: flex;
+        gap: 20px;
+    }
+
+    .linkbuton1 {
+        background: none;
+        border: none;
+        color: #3B82F6;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 15px 30px;
+        border-radius: 16px;
+    }
+
+    .linkbuton2 {
+        background: #3B82F6;
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 16px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .linkbuton1:hover{
+        background-color: #3b83f656;
+    }
+    .linkbuton2:hover{
+        background-color: #3b83f6b2;
+        color: #1A1F2E;
+    }
+/* -------------------------НАЗВАНИЕ------------------------ */
+    .namehead{
+        display: flex;
+        flex-direction: column;
+        padding: 75px 162px;
+        align-items: center;
+        gap: 20px;
+    }
+    .navhead{
+        display: flex;
+        max-width: 666px;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .namehead h3{
+        color: #3B82F6;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    .namehead h1{
+        color: #3B82F6;
+        font-size: 60px;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 400;
+    }
+    .namehead p{
+        color: #3B82F6;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        max-width: 990px;
+        color:#1a1f2e63;
+    }
+    .socket{
+        display: flex;
+        gap: 5px;
+    }
+    .socket h1{
+        color: #3B82F6;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    /* -------------НАЗАД------------- */
+    .back{
+        padding: 0px 162px 75px 162px;
+        display: flex;
+    }
+    .back a{
+        text-decoration: none;
+        color:#1a1f2e63;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+    }
+/* -------------------------КОНТЕНТ---------------------------- */
+    .maincontent {
+        display: flex;
+        justify-content: space-between;
+        gap: 62px;
+        padding: 0px 162px 75px 162px;
+        background: #F7FAFF;
+        font-family: 'Lato', sans-serif;
+        color: #1A1F2E;
+    }
+
+    .prepod_program_content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .price {
+        max-width: 518px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .panel {
+        background: #FFFFFF;
+        padding: 35px 26px;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
+        box-shadow: 
+            0 0 0 4px rgba(59,130,246,0.1),  
+            0 15px 40px rgba(59,130,246,0.1); 
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border: 5px solid #F0F4FF;
+    }
+
+    .prepod h1, .program h1, .chtoyougetblock h2 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #1A1F2E;
+    }
+
+    .modulcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .prepod {
+        padding: 35px 45px;
+        border-radius: 16px;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), 0 15px 40px rgba(59, 130, 246, 0.1);
+    }
+
+    .info_content {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .info_content img {
+        width: 165px;
+        height: 165px; 
+    }
+
+    .textcontainer h1 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: #1A1F2E;
+        margin: 0;
+    }
+
+    .textcontainer h2 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #3B82F6; 
+        font-family: 'Lato', sans-serif;
+    }
+    .textcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .textcontainer h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #1a1f2e63;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .program {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border: 5px solid #F0F4FF;
+        padding: 35px 45px;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), 0 15px 40px rgba(59, 130, 246, 0.1); 
+        border-radius: 16px;
+    }
+
+    .modulcard {
+        padding: 24px;
+        border-radius: 16px;
+        display: flex;
+        gap: 20px;
+        border: 5px solid #F0F4FF;
+    }
+
+    .modulnum {
+        width: 40px;
+        height: 40px;
+        background: #E0E9FF;
+        color: #3B82F6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .modulcontent h3 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #1A1F2E;
+    }
+
+    .modulcontent p {
+        position: relative;
+        padding-left: 24px;
+        color: #1a1f2e63;
+        font-size: 20px;
+    }
+
+    .modulcontent p::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #10B981; 
+        font-weight: bold;
+    }
+
+    .chtoyougetblock {
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), 0 15px 40px rgba(59, 130, 246, 0.1);
+        border: 5px solid #F0F4FF;
+        padding: 35px 45px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chtoyougetblock p {
+        position: relative;
+        padding-left: 30px;
+        margin: 0 0 12px 0;
+        color: #1A1F2E;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .chtoyougetblock p::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #10B981;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .course_preview_img {
+        width: 100%;
+        height: 283px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .priceblock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainprice {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #1A1F2E;
+    }
+
+    .subprice {
+        font-size: 20px;
+        color: #1A1F2E;
+        font-family: 'Lato', sans-serif;
+    }
+    .btncontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn_zapis {
+        background: #3B82F6;
+        color: #FFFFFF;
+        border: none;
+        padding: 24px 0px;
+        border-radius: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .btn_question {
+        background: #F1F5F9;
+        color: #1A1F2E;
+        border: none;
+        padding: 24px 0px;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+    }
+
+
+    .info_list {
+        border-top: 1px solid #F1F5F9;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info_row {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .info_row h1{
+        font-size: 20px;
+        color: #1A1F2E;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .info_row p {
+        font-size: 18px;
+        color: #64748B;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .helpblock {
+        display: flex;
+        background: #E0E9FF;
+        padding: 35px 26px;
+        border-radius: 16px;
+        margin-top: 10px;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .helpblock h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        color: #1A1F2E;
+    }
+
+    .helpblock p {
+        font-size: 20px;
+        color: #64748B;
+    }
+
+    .help_link {
+        color: #3B82F6;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+/* --------------------------ФУТЕР------------------------- */
+        .footer {
+        background-color: #1A1F2E; 
+        color: #ffffff;
+        padding: 80px 162px 40px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footer-brand {
+        max-width: 400px;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .footer-logo span {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .footer-desc {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #cbd5e1;
+    }
+
+    .footer-nav, 
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-nav h2, 
+    .footer-contacts h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-links a {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #ffffff;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #cbd5e1;
+    }
+
+    .footer-bottom {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #334155; 
+        margin-bottom: 40px;
+    }
+
+    .footer-bottom p {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #F0F4FF;
+        font-weight: 500px;
+    }
+
+/* ---------------- 1536px ---------------- */
+
+@media (max-width: 1536px) {
+    .heder {
+        padding: 20px 80px;
+    }
+    
+    .namehead {
+        padding: 75px 80px;
+    }
+    
+    .back {
+        padding: 0 80px 75px 80px;
+    }
+    
+    .maincontent {
+        padding: 0 80px 75px 80px;
+        gap: 40px;
+    }
+    
+    .footer {
+        padding: 80px 80px 40px;
+    }
+    
+    .prepod,
+    .program,
+    .chtoyougetblock {
+        padding: 30px 35px;
+    }
+    
+    .panel {
+        padding: 30px 24px;
+    }
+}
+
+/* ---------------- 1024px ---------------- */
+
+@media (max-width: 1024px) {
+    .heder {
+        padding: 15px 40px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .navblock {
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .linkblock {
+        gap: 20px;
+    }
+    
+    .linkblock a {
+        font-size: 18px;
+    }
+    
+    .buttonblock {
+        gap: 12px;
+    }
+    
+    .linkbuton1,
+    .linkbuton2 {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .namehead {
+        padding: 50px 40px;
+        gap: 15px;
+    }
+    
+    .namehead h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .namehead h1 {
+        font-size: 42px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .namehead p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .navhead {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .socket h1 {
+        font-size: 18px;
+    }
+    
+    .socket img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .back {
+        padding: 0 40px 50px 40px;
+    }
+    
+    .back a {
+        font-size: 20px;
+    }
+
+    .maincontent {
+        flex-direction: column;
+        padding: 0 40px 50px 40px;
+        gap: 40px;
+    }
+    
+    .price {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .panel {
+        padding: 25px 20px;
+    }
+
+    .prepod h1,
+    .program h1,
+    .chtoyougetblock h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .info_content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .textcontainer h1 {
+        font-size: 24px;
+    }
+    
+    .textcontainer h2,
+    .textcontainer h3 {
+        font-size: 18px;
+    }
+
+    .modulcard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .modulnum {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+    
+    .modulcontent h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .modulcontent p {
+        font-size: 16px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .modulcontent p::before {
+        display: none;
+    }
+
+    .chtoyougetblock p {
+        font-size: 15px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .chtoyougetblock p::before {
+        display: none;
+    }
+    
+    .course_preview_img {
+        height: 240px;
+    }
+    
+    .mainprice {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .subprice {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .btn_zapis,
+    .btn_question {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    
+    .info_row h1 {
+        font-size: 18px;
+    }
+    
+    .info_row p {
+        font-size: 16px;
+    }
+
+    .helpblock {
+        padding: 25px 20px;
+        text-align: center;
+    }
+    
+    .helpblock h3 {
+        font-size: 24px;
+    }
+    
+    .helpblock p {
+        font-size: 18px;
+    }
+    
+    .footer {
+        padding: 60px 40px 30px;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .footer-nav,
+    .footer-contacts {
+        min-width: 200px;
+    }
+}
+
+/* ---------------- 640px ---------------- */
+@media (max-width: 640px) {
+    .heder {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navblock {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .linkblock {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .linkblock a {
+        font-size: 16px;
+    }
+    
+    .buttonblock {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .linkbuton1,
+    .linkbuton2 {
+        font-size: 16px;
+        padding: 10px 18px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .namehead {
+        padding: 40px 20px;
+        gap: 12px;
+    }
+    
+    .namehead h3 {
+        font-size: 18px;
+    }
+    
+    .namehead h1 {
+        font-size: 32px;
+    }
+    
+    .namehead p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+    .navhead {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .socket {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .socket h1 {
+        font-size: 16px;
+    }
+    
+    .socket img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .back {
+        padding: 0 20px 40px 20px;
+    }
+    
+    .back a {
+        font-size: 18px;
+    }
+
+    .maincontent {
+        padding: 0 20px 40px 20px;
+        gap: 30px;
+    }
+    
+    .prepod,
+    .program,
+    .chtoyougetblock,
+    .panel {
+        padding: 25px 20px;
+    }
+
+    .prepod h1,
+    .program h1,
+    .chtoyougetblock h2 {
+        font-size: 24px;
+    }
+    
+    .info_content img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .textcontainer h1 {
+        font-size: 20px;
+    }
+    
+    .textcontainer h2,
+    .textcontainer h3 {
+        font-size: 16px;
+    }
+
+    .modulcard {
+        padding: 16px;
+        gap: 12px;
+    }
+    
+    .modulnum {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .modulcontent h3 {
+        font-size: 18px;
+    }
+    
+    .modulcontent p {
+        font-size: 14px;
+    }
+
+    .chtoyougetblock h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .chtoyougetblock p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .course_preview_img {
+        height: 200px;
+    }
+    
+    .mainprice {
+        font-size: 28px;
+    }
+    
+    .subprice {
+        font-size: 16px;
+    }
+    
+    .btn_zapis,
+    .btn_question {
+        font-size: 18px;
+        padding: 16px 0;
+    }
+    
+    .info_row {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .info_row h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .info_row p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .helpblock {
+        padding: 20px 16px;
+        gap: 15px;
+    }
+    
+    .helpblock h3 {
+        font-size: 20px;
+    }
+    
+    .helpblock p {
+        font-size: 16px;
+    }
+    
+    .help_link {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .footer-brand,
+    .footer-nav,
+    .footer-contacts {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-desc {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+    
+    .contact-list {
+        align-items: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .footer-bottom p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* ---------------- 375px ---------------- */
+@media (max-width: 375px) {
+    .heder {
+        padding: 10px 15px;
+    }
+    
+    .linkblock a {
+        font-size: 14px;
+    }
+    
+    .linkbuton1,
+    .linkbuton2 {
+        font-size: 14px;
+        padding: 8px 16px;
+        max-width: 180px;
+    }
+
+    .namehead {
+        padding: 30px 15px;
+    }
+    
+    .namehead h3 {
+        font-size: 16px;
+    }
+    
+    .namehead h1 {
+        font-size: 26px;
+    }
+    
+    .namehead p {
+        font-size: 16px;
+    }
+    
+    .socket h1 {
+        font-size: 14px;
+    }
+    
+    .socket img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .back {
+        padding: 0 15px 30px 15px;
+    }
+    
+    .back a {
+        font-size: 16px;
+    }
+
+    .maincontent {
+        padding: 0 15px 30px 15px;
+        gap: 25px;
+    }
+    
+    .prepod,
+    .program,
+    .chtoyougetblock,
+    .panel {
+        padding: 20px 15px;
+    }
+
+    .prepod h1,
+    .program h1,
+    .chtoyougetblock h2 {
+        font-size: 22px;
+    }
+    
+    .info_content img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .textcontainer h1 {
+        font-size: 18px;
+    }
+    
+    .textcontainer h2,
+    .textcontainer h3 {
+        font-size: 14px;
+    }
+
+    .modulcard {
+        padding: 14px;
+    }
+    
+    .modulnum {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+    }
+    
+    .modulcontent h3 {
+        font-size: 16px;
+    }
+    
+    .modulcontent p {
+        font-size: 13px;
+    }
+
+    .chtoyougetblock h2 {
+        font-size: 20px;
+    }
+    
+    .chtoyougetblock p {
+        font-size: 13px;
+    }
+
+    .course_preview_img {
+        height: 180px;
+    }
+    
+    .mainprice {
+        font-size: 24px;
+    }
+    
+    .subprice {
+        font-size: 14px;
+    }
+    
+    .btn_zapis,
+    .btn_question {
+        font-size: 16px;
+        padding: 14px 0;
+    }
+    
+    .info_row h1 {
+        font-size: 14px;
+    }
+    
+    .info_row p {
+        font-size: 13px;
+    }
+
+    .helpblock {
+        padding: 16px 12px;
+    }
+    
+    .helpblock h3 {
+        font-size: 18px;
+    }
+    
+    .helpblock p {
+        font-size: 14px;
+    }
+    
+    .help_link {
+        font-size: 13px;
+    }
+    
+    .footer {
+        padding: 30px 15px 15px;
+    }
+    
+    .footer-nav h2,
+    .footer-contacts h2 {
+        font-size: 20px;
+    }
+    
+    .footer-links a,
+    .contact-item span,
+    .footer-desc {
+        font-size: 14px;
+    }
+    
+    .footer-bottom p {
+        font-size: 14px;
+    }
+    
+    .divider {
+        margin-bottom: 30px;
+    }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+    .linkblock a,
+    .linkbuton1,
+    .linkbuton2,
+    .btn_zapis,
+    .btn_question,
+    .help_link,
+    .footer-links a,
+    .back a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modulcard,
+    .info_row {
+        min-height: 44px;
+    }
+    }
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    @media (max-width: 640px) {
+        body {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        
+        h1, h2, h3 {
+            line-height: 1.3;
+        }
+        
+        p {
+            line-height: 1.5;
+        }
+    }
